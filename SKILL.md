@@ -92,6 +92,21 @@ Checklist obligatorio en cada diseño (anti-vuelco, topes, carga por nivel, fija
 
 Todas las tablas incluyen cita de fuente, edición/año y nivel de confianza. Ver `references/sources.md`.
 
+## Generación de planos CAD/PDF
+
+La skill incluye un generador de planos en `scripts/generate_plans.py` que produce:
+- **DXF**: vistas ortogonales (superior, frontal, lateral, inferior) + vista explosionada isométrica, con cotas.
+- **SVG**: vistas en formato vectorial.
+- **PDF**: vistas para impresión + plano formal con tabla de piezas.
+
+Uso:
+```bash
+cd scripts
+python generate_plans.py input.json --out ./salida
+```
+
+Ver `templates/views.md` para formato de entrada y convenciones.
+
 ## Referencias
 
 - [Materiales — Madera](references/materials-wood.md)
@@ -108,6 +123,7 @@ Todas las tablas incluyen cita de fuente, edición/año y nivel de confianza. Ve
 
 ## Templates
 
+- [Vistas y cotas (CAD/PDF)](templates/views.md)
 - [Lista de corte CSV](templates/cutlist.csv.md)
 - [BOM CSV](templates/bom.csv.md)
 - [Plan de corte](templates/cutting-plan.md)

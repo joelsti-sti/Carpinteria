@@ -1,0 +1,10 @@
+{
+  "project": "estante-madera",
+  "units": "mm",
+  "parts": [
+    {"name": "Estante", "dims": [1000, 250, 18], "pos": [0, 0, 0], "material": "Melamina 18mm"},
+    {"name": "Soporte L", "dims": [200, 250, 18], "pos": [0, 0, 0], "material": "Melamina 18mm"},
+    {"name": "Soporte R", "dims": [200, 250, 18], "pos": [800, 0, 0], "material": "Melamina 18mm"},
+    {"name": "Travesano", "dims": [964, 50, 18], "pos": [18, 100, 0], "material": "Melamina 18mm"}
+  ]
+}
